@@ -6,19 +6,17 @@ body {
     margin: 0;
 }
 
-/* Container (.main) */
 .main {
     display: flex;
-    gap: 1em; /* Gap between left-section and right-section */
+    gap: 3em; 
     width: 100%;
-    padding: 0 3em; /* 3em left and right padding as indicated in diagram */
-    background-color: #2b3a4a; /* Outer dark container background */
+    padding: 0 3em; 
+    background-color: #2b3a4a; 
 }
 
-/* Left Section: Automatically fills remaining space */
 .left-section {
-    flex-grow: 1; /* Automatically takes all remaining horizontal space */
-    background-color: #8ed3c7; /* Light teal background */
+    flex-grow: 1; 
+    background-color: #8ed3c7;
 }
 
 .right-section {
@@ -26,17 +24,15 @@ body {
     grid-template-columns: 1fr;
     grid-template-rows: repeat(3, 100px);
     gap: 1em;
-    width: 10em;
+    width: 20em;
     padding: 1em;
     background-color: #f7a889;
 }
 
-/* Boxes inside Right Section: Height of 100px */
-.box1,
-.box2,
-.box3 {
-    height: 100px; /* Each box must have a height of 100px */
-    background-color: #7fbdff; /* Blue box background */
+
+.box{
+    height: 100px;
+    background-color: #7fbdff; 
     display: flex;
     align-items: center;
     justify-content: center;
